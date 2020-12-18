@@ -18,6 +18,20 @@
         <p>Previously I was a Software Engineer Intern in <a href="https://www.haitongib.com/en/about-haitong/haitong-securities" target="_blank">Haitong Securities</a>, and a Research Intern in <a href="http://hep.phys.s.u-tokyo.ac.jp/?page_id=182" target="_blank">Aihara-Yokoyama Group</a>, The University of Tokyo.</p>
         <p>Before joining UC Davis, I received a B.S. degree in Mathematics from <a href="http://www.cityu.edu.hk" target="_blank">City University of Hong Kong</a>. And now I am also pursuing a MMSc degree in Statas&DS from <a href="https://www.mit.edu" target="_blank">Massachusetts Institute of Technology</a></p>
       </article>
+      <h3> Demo: YouTube Transcriber Bookmarklet</h3>
+Drag the below "link" into the bookmark bar in any browser.
+Then when you're viewing a YouTube video, click it to view the transcription of the video.
+
+	<BR/>
+	<table style='border-radius:8px;font-size:15px;border:1px #ccc solid; background-color:#fafafa;padding:8px;margin:8px'>
+		<tr>
+			<TD>
+				<a href="javascript:(function(){ var%20regexp%20%3D%20new%20RegExp(%2FplayerCaptionsTracklistRenderer.*%3F(youtube.com%5C%2Fapi%5C%2Ftimedtext.*%3F)%22%2F)%3B%0Avar%20match%20%3D%20regexp.exec(document.body.innerHTML)%3B%0Aif%20(!match)%20%7B%0A%20%20alert%20(%22No%20captions%20found%22)%3B%0A%20%20return%3B%0A%7D%0Avar%20url%20%3D%20regexp.exec(document.body.innerHTML)%5B1%5D%3B%0Aopen(%22http%3A%2F%2Ftechlead.tech%2Fytcaption%2Fcaption.php%3Furl%3D%22%20%2B%20encodeURIComponent(url))%3B })()">📺 Transcribe</a> (Drag to bookmark bar)
+			</td>
+		</tr>
+	</table>
+	<li> Bug notes - The video page needs to be refreshed for subsequent videos.
+
 
     <footer>
       <ul class="meta inline-list">
